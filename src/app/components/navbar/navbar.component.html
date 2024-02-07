@@ -1,0 +1,20 @@
+<header>
+  <nav class="navbar">
+    <div class="container">
+      <img src="../../../assets/logo1.png" alt="Guest House Logo" class="navbar__logo">
+      <ul class="navbar__list">
+        <li class="navbar__item"><a routerLink="/contact" class="navbar__link">צור קשר</a></li>
+        <li class="navbar__item"><a routerLink="/gallery" class="navbar__link">גלריה</a></li>
+        <li class="navbar__item"><a routerLink="/facilities" class="navbar__link">מתקנים</a></li>
+        <li class="navbar__item">
+          <mat-select placeholder="הסוויטות שלנו">
+            <mat-option *ngFor="let suite of suiteOptions" [value]="suite.value">{{suite.viewValue}}</mat-option>
+          </mat-select>
+        </li>
+        <li class="navbar__item"><a routerLink="/about" class="navbar__link">עלינו</a></li>
+        <!-- <li class="navbar__item"><a routerLink="/home" class="navbar__link">עמוד הבית</a></li> -->
+      </ul>
+      <button mat-raised-button color="accent" class="navbar__button">הזמן עכשיו</button>
+    </div>
+  </nav>
+</header>

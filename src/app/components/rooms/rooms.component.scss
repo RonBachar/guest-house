@@ -1,0 +1,52 @@
+$color1: #A67A53;
+$color2: #F2F2F2;
+$color3: #F2F2F2;
+$color4: #737373;
+
+.rooms-section {
+    background-color: #F8F5F0;
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.room-card {
+    max-width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.rooms-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Adjust the gap between cards */
+}
+
+.room-img {
+    background-size: cover;
+
+}
+
+
+.btn-order {
+    border: 1px solid black;
+    width: 115px;
+    height: 50px;
+    border: none;
+    padding: 8px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: white;
+
+    }
+}
