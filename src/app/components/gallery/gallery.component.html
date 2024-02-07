@@ -1,0 +1,12 @@
+<!-- gallery.component.html -->
+
+<section class="gallery-section">
+    <h2>גלריית תמונות</h2>
+    <div class="gallery-container">
+
+        <div *ngFor="let image of images">
+            <img class="gallery-img" [src]="image.url" [alt]="image.alt">
+        </div>
+
+    </div>
+</section>
