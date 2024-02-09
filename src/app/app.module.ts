@@ -31,6 +31,7 @@ import { MatMenuModule } from '@angular/material/menu';
 
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -44,6 +45,7 @@ import { ContactComponent } from './components/contact/contact.component';
         TestimonialsComponent,
         GalleryComponent,
         ContactComponent,
+        FooterComponent,
     ],
     providers: [
         provideAnimationsAsync()

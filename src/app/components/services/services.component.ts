@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+export interface Tile {
+  color: string;
+  cols: number;
+  rows: number;
+  text: string;
+}
 
 @Component({
   selector: 'app-services',
@@ -8,36 +14,39 @@ import { Component, OnInit } from '@angular/core';
 export class ServicesComponent {
   services = [
     {
-      title: 'שירות 1',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci!',
-      image: '../../../assets/services/bed.png'
+      title: 'אינטרנט',
+      description: 'חיבור אינטרנט עבור המתארחים',
+      image: '../../../assets/services/wifi.png'
     },
     {
-      title: 'שירות 2',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci!',
-      image: '../../../assets/services/cleaning.png'
-    },
-    {
-      title: 'שירות 3',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci!',
-      image: '../../../assets/services/kitchen.png'
-    },
-    {
-      title: 'שירות 4',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci!',
-      image: '../../../assets/services/parking.png'
-    },
-    {
-      title: 'שירות 5',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci!',
+      title: 'ג`קוזי זרמים זוגי',
+      description: `בכל סוויטה קיים ג'קוזי רומנטי מפנק`,
       image: '../../../assets/services/tub.png'
     },
     {
-      title: 'שירות 6',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci!',
-      image: '../../../assets/services/wifi.png'
+      title: 'מטבחון מאובזר',
+      description: 'פינת קפה, כיריים, קומקום חשמלי, מקרר, מיקרוגל, כלי הגשה, סירים, מחבתות.',
+      image: '../../../assets/services/kitchen.png'
+    },
+    {
+      title: 'חצר גדולה',
+      description: 'ערסלים, מדשאה, מנגל, פינת ישיבה, נדנדה, שמשיות, עצים, פרחי נוי.',
+      image: '../../../assets/services/yard.png'
+    },
+    {
+      title: 'חוגגים לבן/בת הזוג',
+      description: 'סידור הצימר לימי הולדת, הצעות נישואין ושאר אירועים מיוחדים',
+      image: '../../../assets/services/champagne.png'
+    },
+    {
+      title: 'טיפולים ועיסויים',
+      description: 'בהזמנה מוקדמת ניתן להזמין טיפול זוגי מפנק ',
+      image: '../../../assets/services/massage.png'
     }
   ];
+
+
+
 
   constructor() { }
 }

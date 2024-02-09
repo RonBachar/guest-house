@@ -1,6 +1,56 @@
-.contact-section{
-    height: 100vh;
-    border: 5px solid red;
+// Define color variables
+$color1: #A67A53;
+$color5: #F2F2F2;
+$color3: #F2F2F2;
+$color4: #737373;
+$color2: #F8F5F0;
+
+// Define styles for the contact section
+.contact-section {
+    margin: auto; // Center the section horizontally
+    // border: 1px solid black;
+    max-width: 1300px; // Limit maximum width
+}
+
+// Define styles for the contact container
+.contact-container {
+    display: flex;
+}
+
+// Define styles for the section details
+.section-details {
+    flex: 1;
+    display: flex;
+    justify-content: center; // Center content horizontally
+}
+
+// Define styles for the details container
+.details-container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0; // Add padding for spacing
 
 }
 
+// Define styles for the section form
+.section-form {
+    flex: 1;
+    display: flex;
+    justify-content: center; // Center content horizontally
+    background-color: $color2; // Apply background color
+}
+
+// Define styles for the form container
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0; // Add padding for spacing
+
+}
+
+// Define styles for the contact form
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; // Add spacing between form elements
+}

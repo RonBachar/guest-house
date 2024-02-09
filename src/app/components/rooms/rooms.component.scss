@@ -38,19 +38,16 @@ $color4: #737373;
     align-items: center;
     justify-content: space-around;
 }
+
 .btn-order {
-    border: 1px solid black;
-    // width: 115px;
+    font-size: 20px;
+    width: 150px;
     height: 50px;
-    border: none;
-    padding: 8px 20px;
-    font-size: 16px;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 1s;
 
     &:hover {
-        background-color: white;
-
+        color: white;
+        background-color: black;
     }
 }
