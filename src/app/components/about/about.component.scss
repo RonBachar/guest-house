@@ -18,13 +18,13 @@
     // margin-bottom: 20px; /* Add space between content and images */
 }
 
-.about-images {
-    // margin-left: 20px; /* Add space between content and images */
-}
+// .about-images {
+//     // margin-left: 20px; /* Add space between content and images */
+// }
 
-.image-container {
-    // max-width: 400px; /* Set maximum width for images */
-}
+// .image-container {
+//     // max-width: 400px; /* Set maximum width for images */
+// }
 
 .features {
     // border: 3px solid deepskyblue;
@@ -64,39 +64,37 @@
     flex-direction: column;
 }
 
-.about-images {
-    // Images section styles here
-    // border: 3px solid red;
-}
+// .about-images {
+//     // Images section styles here
+//     // border: 3px solid red;
+// }
 
 .image-container {
     // Image container styles here
     max-width: 500px;
 }
 
-.forest-img {
-    // Forest image styles here
-}
+// .forest-img {
+//     // Forest image styles here
+// }
 
-.play-button {
-    // Play button styles here
-}
+// .play-button {
+//     // Play button styles here
+// }
 
-.room-info {
-    // Room info styles here
-}
+// .room-info {
+//     // Room info styles here
+// }
 
-.btn-contact {
-    width: 250px;
+.btn-discover {
+    font-size: 20px;
+    width: 150px;
     height: 50px;
-    border: none;
-    padding: 8px 20px;
-    font-size: 16px;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 1s;
 
     &:hover {
-        background-color: white;
+        color: white;
+        background-color: black;
     }
 }

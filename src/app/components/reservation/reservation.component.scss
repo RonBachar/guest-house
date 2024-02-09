@@ -15,16 +15,14 @@
 
 
 .btn-check-dates {
+    font-size: 20px;
        
-    width: 140px;
+    width: 150px;
     height: 50px;
-    border: none;
-    padding: 8px 20px;
-    font-size: 16px;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 1s;
     &:hover {
-        background-color: white;
+        color: white;
+        background-color: black;
     }
 }

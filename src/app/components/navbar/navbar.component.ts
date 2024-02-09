@@ -6,8 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  suiteOptions = [
-    { value: 'rain-suite', viewValue: 'סוויטת גשם' },
-    { value: 'forest-suite', viewValue: 'סוויטת יער' }
+  selectedRoom: string;
+  rooms = [
+    { value: 'rain', view: 'Rain Suite' },
+    { value: 'forest', view: 'Forest Suite' }
+    // Add more room options as needed
   ];
+
+  onRoomSelect(event: any) {
+    const room = event.value;
+    // Navigate to the selected room route using Angular Router
+  }
 }

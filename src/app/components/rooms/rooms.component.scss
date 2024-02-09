@@ -33,10 +33,14 @@ $color4: #737373;
 
 }
 
-
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .btn-order {
     border: 1px solid black;
-    width: 115px;
+    // width: 115px;
     height: 50px;
     border: none;
     padding: 8px 20px;

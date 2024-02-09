@@ -51,5 +51,9 @@ export class GalleryComponent {
       url: '../../../assets/forest4.jpg',
       alt: 'forest'
     },
+    {
+      url: '../../../assets/forest4.jpg',
+      alt: 'forest'
+    },
   ]
 }

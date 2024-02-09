@@ -26,7 +26,11 @@ import { RoomsComponent } from './components/rooms/rooms.component';
 import { ServicesComponent } from './components/services/services.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
 
+import {MatGridListModule} from '@angular/material/grid-list';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
     declarations: [
@@ -39,6 +43,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
         ServicesComponent,
         TestimonialsComponent,
         GalleryComponent,
+        ContactComponent,
     ],
     providers: [
         provideAnimationsAsync()
@@ -56,8 +61,12 @@ import { GalleryComponent } from './components/gallery/gallery.component';
         MatCardModule,
         MatNativeDateModule,
         MatFormFieldModule, FormsModule, ReactiveFormsModule, JsonPipe,
-        MatButtonModule, MatTooltipModule, MatIconModule,
-        
+        MatButtonModule, MatTooltipModule, MatIconModule, MatToolbarModule,
+        MatMenuModule,
+        MatGridListModule
+
     ]
+
+
 })
 export class AppModule { }
