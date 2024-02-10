@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
-import { CarouselModule } from './components/carousel/carousel.module';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ReservationComponent } from './components/reservation/reservation.component';
@@ -29,9 +28,15 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 
-import {MatGridListModule} from '@angular/material/grid-list';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatDividerModule } from '@angular/material/divider';
+import { TourComponent } from './components/tour/tour.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
+
 
 @NgModule({
     declarations: [
@@ -46,6 +51,7 @@ import { FooterComponent } from './components/footer/footer.component';
         GalleryComponent,
         ContactComponent,
         FooterComponent,
+        TourComponent,
     ],
     providers: [
         provideAnimationsAsync()
@@ -62,11 +68,20 @@ import { FooterComponent } from './components/footer/footer.component';
         MatButtonModule,
         MatCardModule,
         MatNativeDateModule,
-        MatFormFieldModule, FormsModule, ReactiveFormsModule, JsonPipe,
-        MatButtonModule, MatTooltipModule, MatIconModule, MatToolbarModule,
+        MatFormFieldModule,
+        FormsModule,
+        ReactiveFormsModule,
+        JsonPipe,
+        MatButtonModule, 
+        MatTooltipModule,
+        MatIconModule,
+        MatToolbarModule,
         MatMenuModule,
-        MatGridListModule
-
+        MatGridListModule,
+        MatDividerModule,
+        MatProgressBarModule,
+        CarouselModule.forRoot(),
+        
     ]
 
 

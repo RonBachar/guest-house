@@ -1,16 +1,22 @@
 <mat-toolbar class="navbar-section">
   <div class="navbar-container">
-    <button mat-raised-button color="accent" routerLink="/contact" class="btn-contact">הזמן עכשיו</button>
+    <button mat-fab color="accent" aria-label="Example icon button with a home icon">
+      <mat-icon>home</mat-icon>
+    </button>
+
     <div class="navbar-links">
-      <button mat-button class="navbar-link" routerLink="/about">קצת עלינו</button>
-      <button mat-button class="navbar-link" routerLink="/gallery">גלריית תמונות</button>
-      <button mat-button class="navbar-link" routerLink="/gallery">שירותי אירוח</button>
-      <button mat-button class="navbar-link" [matMenuTriggerFor]="menu">הסוויטות שלנו</button>
-      <mat-menu class="navbar-link" #menu="matMenu" color="accent">
-        <button mat-menu-item>סוויטת יער</button>
-        <button mat-menu-item>סוויטת גשם</button>
+      <a class="navbar-link" routerLink="/about">קצת עלינו</a>
+      <a class="navbar-link" routerLink="/gallery">גלריית תמונות</a>
+      <img src="../../../assets/logo1.png" alt="Description of your image" style="width: 100px;">
+      <a class="navbar-link" routerLink="/gallery">שירותי אירוח</a>
+      <button color="primary" mat-stroked-button [matMenuTriggerFor]="afterMenu" class="btn-menu">הסוויטות שלנו</button>
+      <mat-menu #afterMenu="matMenu">
+        <button style="width: 150px;" mat-menu-item>סוויטת יער</button>
+        <button style="width: 150px;" mat-menu-item>סוויטת גשם</button>
       </mat-menu>
     </div>
-    <img src="../../../assets/logo1.png" alt="Description of your image" style="width: 100px;">
+
+    <button mat-raised-button color="accent" routerLink="/contact" class="btn-order">הזמן עכשיו</button>
+
   </div>
 </mat-toolbar>

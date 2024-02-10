@@ -10,6 +10,11 @@
 @include mat.core();
 @import '../src/app/styles/custom-colors.scss';
 
+// Define Open Sans as the default font for typography
+$custom-typography-config: mat.define-typography-config($font-family: 'Open Sans, sans-serif');
+
+
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
@@ -28,7 +33,9 @@ $guest-house-warn: mat.define-palette(mat.$red-palette);
 $guest-house-theme: mat.define-light-theme((color: (primary: $guest-house-primary,
         accent: $guest-house-accent,
         warn: $guest-house-warn,
-      )));
+      ),
+      typography: $custom-typography-config // Include the custom typography config
+    ));
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component

@@ -8,13 +8,15 @@ $color4: #737373;
     padding: 120px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .room-card {
     max-width: 400px;
     height: 500px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,14 +26,12 @@ $color4: #737373;
 .rooms-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 50px;
     /* Adjust the gap between cards */
 }
 
-.room-img {
-    background-size: cover;
 
-}
 
 .btn-container{
     display: flex;
@@ -41,7 +41,6 @@ $color4: #737373;
 
 .btn-order {
     font-size: 20px;
-    width: 150px;
     height: 50px;
     cursor: pointer;
     transition: background-color 1s;
