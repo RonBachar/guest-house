@@ -15,33 +15,34 @@ $color4: #737373;
 
 .room-card {
     max-width: 400px;
-    height: 500px;
-    padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+
 }
+
+
 
 
 .rooms-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
-    /* Adjust the gap between cards */
+    gap: 100px;
+
 }
 
 
 
-.btn-container{
+.btn-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .btn-order {
-    font-size: 20px;
-    height: 50px;
+    // font-size: 20px;
     cursor: pointer;
     transition: background-color 1s;
 

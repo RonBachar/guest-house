@@ -10,12 +10,13 @@ $color2: #F8F5F0;
     margin: auto; // Center the section horizontally
     // border: 1px solid black;
     max-width: 1300px; // Limit maximum width
-    padding: 150px 0;
+    padding: 100px 0;
 }
 
 // Define styles for the contact container
 .contact-container {
     display: flex;
+    justify-content: space-evenly;
 }
 
 // Define styles for the section details
@@ -29,7 +30,7 @@ $color2: #F8F5F0;
 .details-container {
     display: flex;
     flex-direction: column;
-    padding: 100px 0; // Add padding for spacing
+    // padding: 100px 0; // Add padding for spacing
 
 }
 
@@ -38,14 +39,14 @@ $color2: #F8F5F0;
     flex: 1;
     display: flex;
     justify-content: center; // Center content horizontally
-    background-color: $color2; // Apply background color
+    // background-color: $color2; // Apply background color
 }
 
 // Define styles for the form container
 .form-container {
     display: flex;
     flex-direction: column;
-    padding: 100px 0; // Add padding for spacing
+    // padding: 100px 0; // Add padding for spacing
 
 }
 
@@ -53,5 +54,9 @@ $color2: #F8F5F0;
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 15px; // Add spacing between form elements
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 25px;
 }

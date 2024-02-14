@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import emailjs from '@emailjs/browser';
 
 
 
@@ -9,12 +10,34 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  range = new FormGroup({
-    start: new FormControl<Date | null>(null),
-    end: new FormControl<Date | null>(null),
-  });
+  sending: boolean = false;
+
+  form: FormGroup = this.fb.group({
+    from_name: "",
+    to_name: "Admin",
+    from_email: "",
+    subject: "",
+    message: "",
+  })
+
+  constructor(private fb: FormBuilder) {
+
+  }
 
 
+  async send() {
+    emailjs.init('Si5ThGtU3xZNTu9z_');
+    let response = await emailjs.send("service_fja38a7", "template_0seyoii", {
+      from_name: this.form.value.from_name,
+      to_name: this.form.value.to_name,
+      from_email: this.form.value.from_email,
+      subject: this.form.value.subject,
+      message: this.form.value.message,
+    });
+
+    alert('Message has been sent');
+    this.form.reset();
+  }
 
 
 }

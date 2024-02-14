@@ -3,7 +3,7 @@ $color2: #F2F2F2;
 $color3: #F2F2F2;
 $color4: #737373;
 
-.service-section {
+#service-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,11 +25,11 @@ $color4: #737373;
 
 
 .service-card {
-    border: 2px solid black;
+    // border: 2px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    // gap: 25px;
     width: 400px;
     padding: 30px;
     border: 2px solid #f8f5f0;
@@ -38,4 +38,12 @@ $color4: #737373;
         text-align: center;
     }
 
+}
+
+p{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
 }

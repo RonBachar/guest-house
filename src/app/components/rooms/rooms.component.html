@@ -1,23 +1,32 @@
 <section class="rooms-section">
-    <h1>החדרים היוקרתיים שלנו</h1>
+    <h1>החדרים שלנו</h1>
     <div class="rooms-container">
         <div *ngFor="let room of rooms">
-            <mat-card class="room-card">
-                <img class="room-img" mat-card-image [src]="room.image" alt="Room Image" [alt]="room.name">
-                <mat-card-content>
-                    <p>
-                        {{room.description}}
-                    </p>
-                </mat-card-content>
-                <mat-divider></mat-divider>
-                <mat-card-actions class="btn-container">
-                    <button mat-button class="btn-order">פרטים נוספים</button>
-                    <button mat-raised-button color="accent" class="btn-order">הזמן עכשיו</button>
-                </mat-card-actions>
-                <mat-card-footer>
-                    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-                  </mat-card-footer>
+            <mat-card>
+                <div class="room-card">
+
+                    <img mat-card-image mat-card-image [src]="room.imageUrl" alt="Room Image" [alt]="room.name">
+                    <mat-card-header>
+                        <mat-card-title>{{room.title}}</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>
+                            {{room.description}}
+                        </p>
+                    </mat-card-content>
+                    <mat-divider></mat-divider>
+                    <mat-card-actions class="btn-container">
+                        <button mat-stroked-button >פרטים נוספים</button>
+                        <button mat-raised-button color="accent">הזמן עכשיו</button>
+                    </mat-card-actions>
+                    <mat-card-footer>
+                        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+                    </mat-card-footer>
+                </div>
             </mat-card>
         </div>
     </div>
 </section>
+
+
+

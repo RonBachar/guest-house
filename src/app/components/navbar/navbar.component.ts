@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Observable } from 'rxjs';
+import { map, shareReplay } from 'rxjs/operators';
 
 @Component({
   selector: 'app-navbar',
@@ -6,15 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  selectedRoom: string;
-  rooms = [
-    { value: 'rain', view: 'Rain Suite' },
-    { value: 'forest', view: 'Forest Suite' }
-    // Add more room options as needed
-  ];
+  private breakpointObserver = inject(BreakpointObserver);
 
-  onRoomSelect(event: any) {
-    const room = event.value;
-    // Navigate to the selected room route using Angular Router
-  }
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+    .pipe(
+      map(result => result.matches),
+      shareReplay()
+    );
 }

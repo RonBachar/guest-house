@@ -1,5 +1,40 @@
-.gallery-section {
-    max-width: 1300px;
-    margin: 0 auto; /* Centers the container horizontally */
-    padding: 0 16px; /* Optional: Add padding to create space between content and edges */
-}
+#gallery-section {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+
+    h1 {
+        text-align: center;
+    }
+  
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .gallery {
+      margin: 10px;
+      border: 1px solid #ccc;
+      width: 300px;
+      padding: 10px;
+  
+      &:hover {
+        border-color: #777;
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+  
+      .desc {
+        padding: 10px;
+        text-align: center;
+      }
+    }
+  }
+  

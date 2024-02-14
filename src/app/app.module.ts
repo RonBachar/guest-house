@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
-
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ReservationComponent } from './components/reservation/reservation.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
@@ -24,10 +21,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { RoomsComponent } from './components/rooms/rooms.component';
 import { ServicesComponent } from './components/services/services.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
-import { GalleryComponent } from './components/gallery/gallery.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
-
 import { MatGridListModule } from '@angular/material/grid-list';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -35,23 +30,42 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatDividerModule } from '@angular/material/divider';
 import { TourComponent } from './components/tour/tour.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { LayoutModule } from '@angular/cdk/layout';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { InfoComponent } from './components/info/info.component';
+import { HeaderComponent } from './components/header/header.component';
+import { MainComponent } from './components/main/main.component';
+import { MainNavComponent } from './main-nav/main-nav.component';
+
+
+
 
 
 
 @NgModule({
     declarations: [
         AppComponent,
-        NavbarComponent,
         HomepageComponent,
         ReservationComponent,
         AboutComponent,
         RoomsComponent,
         ServicesComponent,
         TestimonialsComponent,
-        GalleryComponent,
         ContactComponent,
         FooterComponent,
         TourComponent,
+        NavbarComponent,
+        GalleryComponent,
+        InfoComponent,
+        HeaderComponent,
+        MainComponent,
+        MainNavComponent,
     ],
     providers: [
         provideAnimationsAsync()
@@ -72,7 +86,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
         FormsModule,
         ReactiveFormsModule,
         JsonPipe,
-        MatButtonModule, 
+        MatButtonModule,
         MatTooltipModule,
         MatIconModule,
         MatToolbarModule,
@@ -81,7 +95,13 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
         MatDividerModule,
         MatProgressBarModule,
         CarouselModule.forRoot(),
-        
+        MatSidenavModule,
+        MatListModule,
+        LayoutModule,
+        NgbCollapseModule,
+        TooltipModule.forRoot()
+
+
     ]
 
 

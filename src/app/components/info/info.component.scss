@@ -1,0 +1,57 @@
+$color1: #aa8453;
+$color2: #fdece3;
+$color3: #faf7f2;
+$color4: #cab293;
+
+
+
+// Grid
+#grid-section {
+    background-color: #F8F5F0;
+    padding: 50px 0;
+  }
+  
+  .grid-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+  }
+  
+  .grid-content {
+    flex: 2;
+
+  }
+  
+  .grid-icon {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .grid-title {
+    // font-family: $heading-font;
+    // font-size: 2em;
+    margin-top: 0;
+  }
+  
+  .grid-subtitle {
+    // font-size: 1.2em;
+  }
+  
+  .grid-paragraph {
+    // font-size: 1em;
+  }
+  
+  .large-icon {
+    // font-size: 200px;
+    color: red;
+  }
+
+  li{
+    // font-size: 18px;
+  }

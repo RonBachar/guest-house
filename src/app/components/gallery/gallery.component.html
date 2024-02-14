@@ -1,7 +1,12 @@
-<section class="gallery-section">
-    <mat-grid-list cols="3" gutterSize="16px">
-        <mat-grid-tile *ngFor="let image of images">
-            <img [src]="image.url" alt="{{ image.alt }}" class="image-list-item">
-        </mat-grid-tile>
-    </mat-grid-list>
-</section>
+<section id="gallery-section">
+    <h1>גלריית תמונות</h1>
+    <div class="gallery-container">
+      <div class="gallery" *ngFor="let image of images">
+        <a target="_blank" [href]="image.url">
+          <img [src]="image.url" [alt]="image.alt" width="600" height="400">
+        </a>
+        <div class="desc">{{ image.description }}</div>
+      </div>
+    </div>
+  </section>
+  

@@ -1,101 +1,83 @@
-.about-section {
+// Variables
+$primary-color: #aa8453;
+$accent-color: #fdece3;
+$background-color: #faf7f2;
+$text-color: #cab293;
 
-    padding: 50px 0;
+// Section styles
+#about-section {
+    padding: 100px 0;
 
-}
+    .about-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
 
-.about-container {
-    display: flex;
-    // align-items: center; /* Center children horizontally */
-    justify-content: center;
-    gap: 100px;
-    // border: 5px solid red;
-}
+        .about-content {
+            flex: 1;
+            padding: 0 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
 
-.about-content {
-    max-width: 600px;
-    /* Set maximum width for content */
-    // margin-bottom: 20px; /* Add space between content and images */
-}
+            .features {
+                display: flex;
 
-// .about-images {
-//     // margin-left: 20px; /* Add space between content and images */
-// }
+                .feature {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
 
-// .image-container {
-//     // max-width: 400px; /* Set maximum width for images */
-// }
-
-.features {
-    // border: 3px solid deepskyblue;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 75px;
-}
-
-.feature {
-    // margin-bottom: 10px; /* Add space between features */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
+                }
 
 
-.cta {
-    // Call to action styles here
-    // border: 5px solid red;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 50px;
-}
-
-.contact-info {
-    // border: 3px solid green;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
+            }
 
 
-.contect-info-item {
-    display: flex;
-    flex-direction: column;
-}
 
-// .about-images {
-//     // Images section styles here
-//     // border: 3px solid red;
-// }
+            .cta {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
 
-.image-container {
-    // Image container styles here
-    max-width: 500px;
-}
+                .cta-contact {
+                    display: flex;
+                    flex-direction: column;
 
-// .forest-img {
-//     // Forest image styles here
-// }
+                    .cta-contact-item {
+                        // font-size: 18px;
+                        font-weight: 700;
+                    }
+                }
 
-// .play-button {
-//     // Play button styles here
-// }
+                .btn-contact {
+                    // font-size: 18px;
+                    width: 150px;
+                    height: 50px;
+                    cursor: pointer;
+                    transition: background-color 1s;
 
-// .room-info {
-//     // Room info styles here
-// }
+                    &:hover {
+                        color: white;
+                        background-color: black;
 
-.btn-discover {
-    font-size: 20px;
-    width: 150px;
-    height: 50px;
-    cursor: pointer;
-    transition: background-color 1s;
+                    }
+                }
+            }
+        }
 
-    &:hover {
-        color: white;
-        background-color: black;
+        .image-container {
+            flex: 1;
+            max-width: 400px;
+
+            .forest-img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
     }
 }
+

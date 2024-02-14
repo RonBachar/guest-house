@@ -1,22 +1,40 @@
-<mat-toolbar class="navbar-section">
-  <div class="navbar-container">
-    <button mat-fab color="accent" aria-label="Example icon button with a home icon">
-      <mat-icon>home</mat-icon>
-    </button>
-
-    <div class="navbar-links">
-      <a class="navbar-link" routerLink="/about">קצת עלינו</a>
-      <a class="navbar-link" routerLink="/gallery">גלריית תמונות</a>
-      <img src="../../../assets/logo1.png" alt="Description of your image" style="width: 100px;">
-      <a class="navbar-link" routerLink="/gallery">שירותי אירוח</a>
-      <button color="primary" mat-stroked-button [matMenuTriggerFor]="afterMenu" class="btn-menu">הסוויטות שלנו</button>
-      <mat-menu #afterMenu="matMenu">
-        <button style="width: 150px;" mat-menu-item>סוויטת יער</button>
-        <button style="width: 150px;" mat-menu-item>סוויטת גשם</button>
-      </mat-menu>
-    </div>
-
-    <button mat-raised-button color="accent" routerLink="/contact" class="btn-order">הזמן עכשיו</button>
-
+<mat-toolbar class="toolbar">
+  <button mat-icon-button (click)="sidenav.toggle()" id="menuIcon" aria-label="כפתור תפריט">
+      <mat-icon [ngStyle]="{'color':'white'}">menu</mat-icon>
+  </button>
+  <div class="menu-items">
+      <a routerLink="/about" class="top-menu-item">אודות</a>
+      <a routerLink="/contact" class="top-menu-item">צור קשר</a>
+      <a routerLink="/rooms" class="top-menu-item">חדרים</a>
+      <a routerLink="/services" class="top-menu-item">שירותים</a>
+      <a routerLink="/gallery" class="top-menu-item">גלריה</a>
   </div>
 </mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav [fixedInViewport]="true" [fixedTopGap]="100" mode="side">
+      <div class="side-nav-items">
+          <div class="">
+              <a (click)="sidenav.close()" mat-button routerLink="/" class="side-menu-item">בית</a>
+          </div>
+          <div class="">
+              <a (click)="sidenav.close()" mat-button routerLink="/about" class="side-menu-item">אודות</a>
+          </div>
+          <div class="">
+              <a (click)="sidenav.close()" mat-button routerLink="/contact" class="side-menu-item">צור קשר</a>
+          </div>
+          <div class="">
+              <a (click)="sidenav.close()" mat-button routerLink="/rooms" class="side-menu-item">חדרים</a>
+          </div>
+          <div class="">
+              <a (click)="sidenav.close()" mat-button routerLink="/services" class="side-menu-item">שירותים</a>
+          </div>
+          <div class="">
+              <a (click)="sidenav.close()" mat-button routerLink="/gallery" class="side-menu-item">גלריה</a>
+          </div>
+          <div class="">
+              <a (click)="sidenav.close()" mat-button routerLink="/tour" class="side-menu-item">סיור</a>
+          </div>
+      </div>
+  </mat-sidenav>
+</mat-sidenav-container>
