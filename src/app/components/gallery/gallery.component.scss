@@ -1,9 +1,17 @@
+$color1: #aa8453;
+$color2: #fdece3;
+$color3: #faf7f2;
+$color4: #cab293;
+
+
+
 #gallery-section {
 
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding: 50px 0;
+  background-color: #F8F5F0;
 
     h1 {
         text-align: center;

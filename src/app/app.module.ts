@@ -36,12 +36,11 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { InfoComponent } from './components/info/info.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
-import { MainNavComponent } from './main-nav/main-nav.component';
+import { MainNavComponent } from './components/main-nav/main-nav.component';
 
 
 
@@ -60,7 +59,6 @@ import { MainNavComponent } from './main-nav/main-nav.component';
         ContactComponent,
         FooterComponent,
         TourComponent,
-        NavbarComponent,
         GalleryComponent,
         InfoComponent,
         HeaderComponent,

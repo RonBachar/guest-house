@@ -4,6 +4,24 @@ $accent-color: #fdece3;
 $background-color: #faf7f2;
 $text-color: #cab293;
 
+$color1: #aa8453;
+$color2: #fdece3;
+$color3: #faf7f2;
+$color4: #cab293;
+
+
+.mat-mdc-raised-button.mat-accent {
+    font-size: 18px;
+    border-radius: 0px;
+    background-color: $color1;
+    width: 140px;
+    height: 50px;
+    color: white;
+}
+
+
+
+
 // Section styles
 #about-section {
     padding: 100px 0;
@@ -16,7 +34,7 @@ $text-color: #cab293;
 
         .about-content {
             flex: 1;
-            padding: 0 100px;
+            // padding: 0 100px;
             display: flex;
             flex-direction: column;
             gap: 50px;
@@ -40,7 +58,8 @@ $text-color: #cab293;
             .cta {
                 display: flex;
                 align-items: center;
-                justify-content: space-around;
+                gap: 50px;
+                // justify-content: space-around;
 
                 .cta-contact {
                     display: flex;
@@ -48,23 +67,11 @@ $text-color: #cab293;
 
                     .cta-contact-item {
                         // font-size: 18px;
-                        font-weight: 700;
+                        // font-weight: 700;
                     }
                 }
 
-                .btn-contact {
-                    // font-size: 18px;
-                    width: 150px;
-                    height: 50px;
-                    cursor: pointer;
-                    transition: background-color 1s;
 
-                    &:hover {
-                        color: white;
-                        background-color: black;
-
-                    }
-                }
             }
         }
 
@@ -81,3 +88,27 @@ $text-color: #cab293;
     }
 }
 
+
+@media (max-width: 768px) {
+    .features{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        .feature{
+            gap: 10px;
+        }
+    }
+    .cta{
+        flex-direction: column;
+        gap: 25px;
+    }
+    h2,h3, p{
+        text-align: center;
+    }
+    .about-content{
+        padding: 0;
+    }
+    .image-container{
+        display: none;
+    }
+}
