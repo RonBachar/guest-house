@@ -3,47 +3,37 @@ $color2: #F2F2F2;
 $color3: #F2F2F2;
 $color4: #737373;
 
-#service-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.services-container{
     padding: 50px 0;
-}
-
-.service-container {
-    // border: 5px solid deeppink;
-    max-width: 1200px;
-    margin: auto;
     display: flex;
-    justify-content: center;
-    gap: 25px;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: #F8F5F0;
 
 }
 
-
-
-.service-card {
-    // border: 2px solid black;
-    display: flex;
-    flex-direction: column;
+.mdc-card {
+    width: 250px;
     align-items: center;
-    // gap: 25px;
-    width: 400px;
-    padding: 30px;
+    box-shadow: none;
+    background-color: transparent;
     border: 2px solid #f8f5f0;
+    padding: 10px;
+}
 
-    .card-subtitle {
-        text-align: center;
+.mat-mdc-card-title, .mat-mdc-card-subtitle  {
+    text-align: center;
+    padding-bottom: 10px;
+    color: black;
+}
+.mat-mdc-card-subtitle {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .service-section {
+        padding: 50px 0;
     }
-
-}
-
-p{
-    text-align: center;
-}
-
-h3{
-    text-align: center;
 }

@@ -41,6 +41,7 @@ import { InfoComponent } from './components/info/info.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
 import { MainNavComponent } from './components/main-nav/main-nav.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 
 
@@ -64,6 +65,7 @@ import { MainNavComponent } from './components/main-nav/main-nav.component';
         HeaderComponent,
         MainComponent,
         MainNavComponent,
+        HeroComponent,
     ],
     providers: [
         provideAnimationsAsync()

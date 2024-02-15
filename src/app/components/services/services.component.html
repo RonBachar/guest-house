@@ -1,20 +1,15 @@
-<section id="service-section">
-    <div class="service-container">
-        <mat-card *ngFor="let service of services" class="service-card">
-            <img mat-card-image [src]="service.image" alt="{{ service.title }}">
-            <mat-card-header>
-                <mat-card-title>
-                    <h3>
-                        {{ service.title }}
-                    </h3>
-                </mat-card-title>
-
-                <mat-card-subtitle>
-                    <p>
-                        {{ service.description }}
-                    </p>
-                </mat-card-subtitle>
-            </mat-card-header>
-        </mat-card>
-    </div>
+<section class="services-container">
+    <mat-card *ngFor="let service of services">
+        <img mat-card-sm-image [src]="service.image" alt="{{ service.title }}">
+        <mat-card-header>
+            <mat-card-title>
+                {{ service.title }}
+            </mat-card-title>
+            
+            <mat-card-subtitle>
+                {{ service.description }}
+                
+            </mat-card-subtitle>
+        </mat-card-header>
+    </mat-card>
 </section>

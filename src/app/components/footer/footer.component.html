@@ -1,22 +1,33 @@
 <footer>
   <div class="container">
-    <div class="footer_content">
-      <div class="first_section">
-        <h3 class="footer_headings">אודות</h3>
+    <div class="footer-content">
+      <div class="first-section">
+        <h3>אודות</h3>
         <img src="../../../assets/logo1.png" style="width: 100px;" alt="" />
         <p>
           חדרי אירוח מקסימים במושב שעל, רמת הגולן. ניתן להזמין עכשיו וליהנות מחווית אירוח ייחודית ומיוחדת באווירה
           רומנטית ושקטה בצפון.
         </p>
-        <div class="social_icons">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-google"></a>
-          <a href="#" class="fa fa-instagram"></a>
+        <div class="social-icons">
+          <a href="https://facebook.com">
+            <img class="social-img" src="../../../assets/social/facebook.png" alt="">
+          </a>
+
+          <a href="https://instagram.com">
+            <img class="social-img" src="../../../assets/social/instagram.png" alt="">
+          </a>
+
+          <a href="https://pinterest.com">
+            <img class="social-img" src="../../../assets/social/pinterest.png" alt="">
+          </a>
+
+          <a href="https://wa.me/0545869818">
+            <img class="social-img" src="../../../assets/social/whatsapp.png" alt="">
+          </a>
         </div>
       </div>
-      <div class="second_section">
-        <h3 class="footer_headings">קישורים</h3>
+      <div class="second-section">
+        <h3>קישורים</h3>
         <ul>
           <li><a href="#">עמוד הבית</a></li>
           <li><a href="#">עלינו</a></li>
@@ -24,39 +35,39 @@
           <li><a href="#">צור קשר</a></li>
         </ul>
       </div>
-      <div class="third_section">
-        <h3 class="footer_headings">מידע נוסף</h3>
+      <div class="third-section">
+        <h3>מידע נוסף</h3>
         <ul>
-          <li>
-            <mat-icon style="color: white;">mail</mat-icon>
-            <span>mikasa&commat;guesthouse.com</span>
-
-          </li>
-          <li>
-            <mat-icon style="color: white;">location_on</mat-icon>
-            <span>מושב שעל, רמת הגולן</span>
-          </li>
-
-          <li>
-            <mat-icon style="color: white;">call</mat-icon>
-            <span>+972 0545 869 818</span>
-          </li>
+          <li>mikasa&commat;guesthouse.com</li>
+          <li>מושב שעל, רמת הגולן</li>
+          <li>+972 0545 869 818</li>
         </ul>
       </div>
-      <div class="fourth_section">
-        <h3 class="footer_headings">צור קשר</h3>
-        <form [formGroup]="inquiryForm" (ngSubmit)="onSubmit()" class="inquiry-form">
-          <mat-form-field appearance="outline" style="background-color: white;">
-            <input matInput formControlName="email" type="email" placeholder="כתובת מייל">
-            <mat-error *ngIf="inquiryForm.get('email').hasError('email') && inquiryForm.get('email').touched">אנא הזן
-              אימייל תקין</mat-error>
-          </mat-form-field>
+      <div class="fourth-section">
+        <h3>צור קשר</h3>
+        <form [formGroup]="form" (submit)="send()" class="contact-form">
           <mat-form-field appearance="outline">
+            <mat-label>שם מלא</mat-label>
+            <input matInput formControlName="from-name" placeholder="שם מלא">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>כתובת מייל</mat-label>
+            <input matInput formControlName="from-email" type="email" placeholder="כתובת מייל">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>נושא</mat-label>
+            <input matInput formControlName="subject" placeholder="נושא הפניה">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>הודעה</mat-label>
             <textarea matInput formControlName="message" placeholder="תוכן הודעה"></textarea>
           </mat-form-field>
-          <button mat-raised-button color="accent" type="submit" class="btn-request">שלח בקשה</button>
+          <button mat-flat-button  color="primary" type="submit">שלח</button>
         </form>
-        
+
       </div>
     </div>
   </div>
