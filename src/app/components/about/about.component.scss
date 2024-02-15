@@ -74,7 +74,9 @@ $color4: #cab293;
 // Responsive styles
 @media (max-width: 768px) {
 
-
+    .section-container {
+        padding: 0 25px;
+    }
 
     h1,
     h4,
