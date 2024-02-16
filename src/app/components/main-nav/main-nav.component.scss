@@ -4,56 +4,41 @@ $color3: #faf7f2;
 $color4: #cab293;
 
 
-.sidenav-container {
-  height: 100%;
-}
 
-.sidenav {
-  width: 200px;
-  box-shadow: 3px 0 6px rgba(0, 0, 0, .24);
-}
 
-.mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
 
 .hidden {
   display: none;
 }
 
 
-mat-toolbar a {
+a {
 
   color: black;
   text-decoration: none;
+
+  &:hover {
+    color: $color1;
+  }
 }
 
 mat-toolbar {
-  // gap:25px;
-  // justify-content: center;
-  // position: fixed;
-  height: 10vh;
+  gap: 50px;
+  justify-content: center;
+
   img {
     width: 50px;
   }
 }
 
 
-.mat-mdc-unelevated-button.mat-primary {
-  // font-size: 18px;
-  border-radius: 0px;
+.mat-mdc-extended-fab {
+  height: 48;
   background-color: $color1;
-  height: 50px;
+
   &:hover {
     background-color: black;
 
   }
 
 }
-
-.spacer{
-  flex: 1 1 auto;
-}
-
