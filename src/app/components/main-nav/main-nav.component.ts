@@ -16,4 +16,5 @@ export class MainNavComponent {
       map(result => result.matches),
       shareReplay()
     );
+
 }
