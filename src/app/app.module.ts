@@ -33,6 +33,7 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { InfoComponent } from './components/info/info.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainNavComponent } from './components/main-nav/main-nav.component';
+import { ContactComponent } from './components/contact/contact.component';
 
  
 
@@ -50,7 +51,8 @@ import { MainNavComponent } from './components/main-nav/main-nav.component';
         GalleryComponent,
         TourComponent,
         FooterComponent,
-        MainNavComponent
+        MainNavComponent,
+        ContactComponent
         
     ],
     providers: [

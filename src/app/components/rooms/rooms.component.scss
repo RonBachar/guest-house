@@ -4,39 +4,46 @@ $color3: #F2F2F2;
 $color4: #737373;
 
 .mat-mdc-card {
-    align-items: center;
-    justify-content: space-around;
-    background-color: transparent;
-    width: 300px;
-    padding: 10px;
-    gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+  width: 300px;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: none;
+  border: 3px solid #f8f5f0;
 }
+
 .mat-mdc-progress-bar {
-    padding: 25px 0;
+  padding: 25px 0;
 }
 
 
 .cards-container {
-    padding: 100px 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
 }
+
 .mat-mdc-card-lg-image {
-    width: 100%;
+  width: 100%;
 }
 
 
 
-.mat-mdc-unelevated-button.mat-primary {
+.mat-mdc-unelevated-button{
   font-size: 18px;
   border-radius: 0px;
-  background-color: $color1;
-  height: 50px;
+
   &:hover {
     background-color: black;
-
+    color: white;
   }
 
+}
+
+.mat-mdc-card-content {
+  text-align: justify;
 }

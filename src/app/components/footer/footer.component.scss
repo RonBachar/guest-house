@@ -4,22 +4,69 @@ $color3: #faf7f2;
 $color4: #cab293;
 
 
-a {
-    text-decoration: none;
-}
-
-
-
-.footer-content {
-    display: flex;
-}
-
-
-
 ul {
     padding: 0;
-    margin: 0;
+    list-style: none;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-img {
+    width: 100px;
+}
+
+.first-row {
+    display: flex;
+    gap: 50px;
+}
+
+.second-row {
+    display: flex;
+
+}
+
+.first-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.second-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+img.social-img {
+    width: 25px;
+
+}
+
+
+
+
+.site-footer {
+    padding: 45px 0 20px;
+    line-height: 24px;
+
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
 
 
 .social-icons {
@@ -27,87 +74,46 @@ ul {
     gap: 25px;
 }
 
-
-
-
-.first-section {
-    gap: 25px;
-    flex: 25%;
-    display: flex;
-    flex-direction: column;
+.copyright-text {
+    margin: 0
 }
 
-.second-section,
-.third-section,
-.fourth-section {
-    flex: 25%;
-    display: flex;
-    flex-direction: column;
-}
+@media (max-width:991px) {}
+
+@media (max-width:767px) {}
 
 
+@media (max-width:767px) {
 
-
-
-
-ul {
-    list-style: none;
-}
-
-
-img.social-img {
-    width: 25px;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
-
-
-p,
-a,
-span {
-    color: black;
-}
-
-@media (max-width: 768px) {
-    .footer-content {
+    .first-row {
         flex-direction: column;
-        gap: 50px;
-    }
-
-    .contact-form {
         align-items: center;
     }
 
-    .first-section,
-    .second-section,
-    .third-section,
-    .fourth-section {
+    .first-section {
+
+        flex-direction: column;
         align-items: center;
     }
+    .second-section {
 
-    p,
-    a,
-    span,
-    li {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    li,p{
+        text-align: center;
+    }
+
+    h4{
         text-align: center;
     }
 
 
+
 }
 
-.mat-mdc-unelevated-button.mat-primary {
-    // font-size: 18px;
-    border-radius: 0px;
-    background-color: $color1;
-    width: 155px;
-
-    &:hover {
-        background-color: black;
-
-    }
-
-
+.phone-item{
+    direction: ltr;
 }
