@@ -1,41 +1,41 @@
+// Angular imports
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+// Angular Material imports
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+
+// Angular CDK imports
+import { LayoutModule } from '@angular/cdk/layout';
+
+// App component imports
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { JsonPipe } from '@angular/common';
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { AboutComponent } from './components/about/about.component';
-import { MatIconModule } from '@angular/material/icon';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import { RoomsComponent } from './components/rooms/rooms.component';
 import { ServicesComponent } from './components/services/services.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatGridListModule } from '@angular/material/grid-list';
 import { FooterComponent } from './components/footer/footer.component';
-import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { MatDividerModule } from '@angular/material/divider';
 import { TourComponent } from './components/tour/tour.component';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
-import { LayoutModule } from '@angular/cdk/layout';
-import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { InfoComponent } from './components/info/info.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainNavComponent } from './components/main-nav/main-nav.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
- 
 
 
 
@@ -63,7 +63,6 @@ import { ContactComponent } from './components/contact/contact.component';
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        MatSelectModule,
         MatDatepickerModule,
         MatInputModule,
         MatButtonModule,
@@ -71,19 +70,14 @@ import { ContactComponent } from './components/contact/contact.component';
         MatFormFieldModule,
         FormsModule,
         ReactiveFormsModule,
-        JsonPipe,
         MatButtonModule,
         MatTooltipModule,
         MatIconModule,
         MatToolbarModule,
-        MatMenuModule,
-        MatGridListModule,
-        MatDividerModule,
         MatProgressBarModule,
         MatSidenavModule,
         MatListModule,
         LayoutModule,
-        NgbCollapseModule,
 
 
     ]

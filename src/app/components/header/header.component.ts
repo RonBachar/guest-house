@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -8,9 +8,5 @@ import { Component, inject } from '@angular/core';
  
 })
 export class HeaderComponent {
-  isResponsive: boolean = false;
 
-  toggleResponsive(): void {
-    this.isResponsive = !this.isResponsive;
-  }
 }
