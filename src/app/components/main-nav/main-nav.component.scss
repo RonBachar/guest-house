@@ -6,13 +6,20 @@ $color4: #cab293;
 
 
 
-
-.hidden {
-  display: none;
+.sidenav-container {
+  height: 100%;
 }
 
 
-a {
+
+mat-toolbar {
+  gap: 50px;
+  justify-content: center;
+  height: 10vh;
+  background-color: white;
+}
+
+mat-toolbar a {
 
   color: black;
   text-decoration: none;
@@ -22,23 +29,38 @@ a {
   }
 }
 
-mat-toolbar {
-  gap: 50px;
-  justify-content: center;
 
-  img {
-    width: 50px;
+.mat-mdc-extended-fab {
+
+  &:hover {
+    background-color: white;
+
   }
+
 }
 
 
-.mat-mdc-extended-fab {
-  height: 48;
-  background-color: $color1;
+.hidden {
+  display: none;
+}
 
-  &:hover {
-    background-color: black;
 
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+  mat-toolbar {
+    gap: 50px;
+    justify-content: space-between;
+
+    img {
+      width: 50px;
+    }
   }
+
 
 }

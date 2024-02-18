@@ -1,15 +1,15 @@
 <div class="cards-container">
     <mat-card *ngFor="let room of rooms">
-        <img mat-card-lg-image [src]="room.imageUrl" alt="Room Image" [alt]="room.name">
+        <a [href]="room.imageUrl" target="_blank">
+            <img mat-card-lg-image [src]="room.imageUrl" alt="Room Image" [alt]="room.name">
+        </a>
         <mat-card-header>
             <mat-card-title>{{room.title}}</mat-card-title>
         </mat-card-header>
         <mat-card-content>{{room.description}}</mat-card-content>
         <mat-progress-bar mode="indeterminate"></mat-progress-bar>
         <mat-card-actions>
-      
             <button mat-flat-button color="primary">הזמן עכשיו</button>
         </mat-card-actions>
-
     </mat-card>
 </div>

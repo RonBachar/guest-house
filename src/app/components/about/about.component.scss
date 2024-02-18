@@ -1,19 +1,11 @@
-// Define colors
 $color1: #aa8453;
-$color2: #fdece3;
-$color3: #faf7f2;
-$color4: #cab293;
 
-// Define mixins or global styles if necessary
-
-// Main section styles
 .about-section {
     padding: 100px 0;
 
     .section-container {
         display: flex;
 
-        // Image section styles
         .image-section {
             flex: 1;
             padding: 0 100px;
@@ -24,40 +16,29 @@ $color4: #cab293;
             }
         }
 
-        // Info section styles
         .info-section {
             flex: 1;
             display: flex;
             flex-direction: column;
             gap: 30px;
-            // padding: 0 100px;
+            padding: 0 100px;
 
-            .section-item {
+
+            .social-container {
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 30px;
-
-         
+                justify-content: center;
+                gap: 25px;
+            
+                .social-img {
+                    width: 35px;
+                }
             }
+            
         }
     }
 }
 
-// Additional styles for specific elements or components
 
-// Social container styles
-.social-container {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-
-    .social-img {
-        width: 35px;
-    }
-}
-
-// Button styles
 .mat-mdc-unelevated-button.mat-primary {
     border-radius: 0px;
     background-color: $color1;
@@ -69,11 +50,20 @@ $color4: #cab293;
     }
 }
 
-// Responsive styles
 @media (max-width: 768px) {
 
-    .section-container {
-        padding: 0 25px;
+    .about-section {
+
+        .section-container {
+            display: flex;
+            .image-section {
+                display: none;
+            }
+
+            .info-section {
+                padding: 0 50px;
+            }
+        }
     }
 
     h1,
@@ -82,12 +72,5 @@ $color4: #cab293;
         text-align: center;
     }
 
-    .image-section {
-        display: none;
-    }
 
-    .section-item-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
 }
