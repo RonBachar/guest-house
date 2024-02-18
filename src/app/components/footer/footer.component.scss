@@ -20,20 +20,19 @@ a {
 
 .first-row {
     display: flex;
-    gap: 50px;
+
+    >* {
+        flex: 1;
+    }
 }
+
+
+
 
 .second-row {
     display: flex;
 
 }
-
-.first-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
 
 .second-section {
     display: flex;
@@ -88,13 +87,15 @@ img.social-img {
     .first-row {
         flex-direction: column;
         align-items: center;
+        gap: 25px;
     }
 
     .first-section {
-
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .second-section {
 
         flex-direction: column;
@@ -102,11 +103,12 @@ img.social-img {
         gap: 25px;
     }
 
-    li,p{
+    li,
+    p {
         text-align: center;
     }
 
-    h4{
+    h4 {
         text-align: center;
     }
 
@@ -114,6 +116,6 @@ img.social-img {
 
 }
 
-.phone-item{
+.phone-item {
     direction: ltr;
 }

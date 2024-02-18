@@ -6,7 +6,6 @@ import { InfoComponent } from './components/info/info.component';
 import { RoomsComponent } from './components/rooms/rooms.component';
 import { ServicesComponent } from './components/services/services.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
-import { TourComponent } from './components/tour/tour.component';
 import { ContactComponent } from './components/contact/contact.component';
 
 
